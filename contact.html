@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Coffee - Contact & Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div id="site-logo">Artisan Coffee Co.</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Roasts & Contact</h1>
+
+    <section>
+      <h2>Bean Price List & Profiles</h2>
+      <table>
+        <caption>Artisan Coffee Bean Catalog 2026</caption>
+        <thead>
+          <tr>
+            <th scope="col">Origin</th>
+            <th scope="col">Roast Level</th>
+            <th scope="col">Flavor Profile</th>
+            <th scope="col">Price per 250g</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Ethiopia</th>
+            <td>Light</td>
+            <td>Floral, Jasmine, Citrus</td>
+            <td>$16.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Colombia</th>
+            <td>Medium</td>
+            <td>Caramel, Red Apple, Nutty</td>
+            <td>$14.50</td>
+          </tr>
+          <tr>
+            <th scope="row">Sumatra</th>
+            <td>Dark</td>
+            <td>Earthy, Cocoa, Spice</td>
+            <td>$15.00</td>
+          </tr>
+          <tr>
+            <th scope="row">Decaf Peru</th>
+            <td>Medium</td>
+            <td>Sweet Chocolate, Dried Fruit</td>
+            <td>$14.00</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="3">Average Price Per Bag</td>
+            <td>$14.88</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Contact Us / Place an Inquiry</h2>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Contact Information & Order Request</legend>
+
+          <div>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="John Doe" required maxlength="50">
+          </div>
+
+          <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+
+          <div>
+            <label for="quantity">Bags Quantity (250g):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="50" value="1">
+          </div>
+
+          <div>
+            <label for="preferred-date">Preferred Delivery Date:</label>
+            <input type="date" id="preferred-date" name="preferred-date">
+          </div>
+
+          <div>
+            <label for="theme-color">Custom Packaging Tint:</label>
+            <input type="color" id="theme-color" name="theme-color" value="#6f4e37">
+          </div>
+
+          <div>
+            <p>Select Grind Type:</p>
+            <input type="radio" id="whole-bean" name="grind" value="whole" checked>
+            <label for="whole-bean">Whole Bean</label>
+
+            <input type="radio" id="espresso-grind" name="grind" value="espresso">
+            <label for="espresso-grind">Espresso Grind</label>
+
+            <input type="radio" id="filter-grind" name="grind" value="filter">
+            <label for="filter-grind">Filter / Drip Grind</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+            <label for="newsletter">Subscribe to monthly coffee news</label>
+          </div>
+
+          <div>
+            <label for="message">Special Instructions / Message:</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+          </div>
+
+          <button type="submit">Submit Inquiry</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Artisan Coffee Co. All rights reserved.</p>
+  </footer>
+</body>
+</html>
